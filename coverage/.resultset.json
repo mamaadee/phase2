@@ -75,7 +75,6 @@
         null,
         null,
         null,
-        null,
         null
       ],
       "/home/ubuntu/workspace/phase2/app/models/instructor.rb": [
@@ -582,6 +581,6 @@
         0
       ]
     },
-    "timestamp": 1523176498
+    "timestamp": 1523178567
   }
 }
