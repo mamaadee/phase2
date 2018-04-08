@@ -16,7 +16,7 @@ class Camp < ApplicationRecord
     validate :location_is_active_in_system, on: :create
     validate :camp_is_not_a_duplicate, on: :create
     validate :max_students_not_greater_than_capacity, on: :create
-    validates_date :start_date, :on_or_after => lambda {Date.today}, :on_or_after_message => "This is the past" on: :create
+    validates_date :start_date, :on_or_after => lambda {Date.today}, :on_or_after_message => "This is the past", on: :create
     validates_date :end_date, :on_or_after => :start_date
     validates_inclusion_of :time_slot, in: %w[am pm], message: "try a different time slot"
     

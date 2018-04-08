@@ -12,6 +12,11 @@ FactoryBot.define do
   # factory blueprint for locations
   factory :location do
     name "Doha"
+    street_1 "Alsudair"
+    street_2 nil
+    city "Alwajba"
+    zip "34534"
+    max_capacity 20
     active true
   end
 
