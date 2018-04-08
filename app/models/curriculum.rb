@@ -3,8 +3,7 @@ class Curriculum < ApplicationRecord
     has_many :camps
     
     #validations
-    validates_uniqueness_of :name
-    validate_presence_of :name
+    validates :name, presence: true, uniqueness: {case_sensitive: false}
     validate :max_rating_greater_than_min_rating
     ratings_all =[0]+(100..3000).to_a
     validates :min_rating, numericality: {only_integer: true}, inclusion: {in: ratings_all}
@@ -23,3 +22,4 @@ class Curriculum < ApplicationRecord
         end
     end
 end
+

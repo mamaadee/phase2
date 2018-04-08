@@ -4,8 +4,8 @@ FactoryBot.define do
   factory :curriculum do
     name "Calculus"
     description "learn calculus"
-    min_rating 250
-    max_rating 800
+    min_rating 450
+    max_rating 900
     active true
   end
 

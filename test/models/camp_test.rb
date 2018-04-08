@@ -41,7 +41,7 @@ class CampTest < ActiveSupport::TestCase
     end
       
     should "have a scope to order alphabetically by camp name" do
-      assert_equal ["Calculus", "Java", "Ruby"], Camp.alphabetical.all.map{|c| c.curriculum.name}
+      assert_equal ["Calculus", "Chess", "English", "Java", "Python", "Ruby", "Sports"], Camp.alphabetical.all.map{|c| c.curriculum.name}
     end
 
     should "have a scope to order chronologically by due_on date" do
