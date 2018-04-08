@@ -6,10 +6,9 @@ class Camp < ApplicationRecord
     belongs_to :curriculum
     belongs_to :location
     has_many :camp_instructors
-    has_many :instructors, through: :camp_instructor
+    has_many :instructors, through: :camp_instructors
     
     #validations
-    validates_uniqueness_of :name
     validates_presence_of :curriculum_id, :location_id, :start_date, :time_slot
     validates_numericality_of :max_students, only_integer: true, greater_than: 0, allow_blank: true
     validate :curriculum_is_active_in_system, on: :create
@@ -21,18 +20,22 @@ class Camp < ApplicationRecord
     validates_inclusion_of :time_slot, in: %w[am pm], message: "try a different time slot"
     
     #scopes
-    scope :alphabetical, -> {order("name")}
+    scope :alphabetical, -> {joins(:curriculum).order('name')}
     scope :active, -> {where(active: true)}
     scope :inactive, -> { where(active: false) }
     validates_date(:due_on)
     scope :chronological, -> {order('start_date', 'end_date')}
-    scope :past, -> {where("due_on < ?", Date.today)}
-    scope :upcoming, -> {where("due_on >= ?", Date.today)}
+    scope :past, -> {where("end_date < ?", Date.today)}
+    scope :upcoming, -> {where("'start_date >= ?'", Date.today)}
     scope :morning, -> {where('time_slot = ?','am')}
     scope :afternoon, -> {where('time_slot = ?','pm')}
     scope :for_curriculum, ->(curriculum_id) {where("curriculum_id = ?", curriculum_id) }
     
     #methods
+    def name
+        self.curriculum.name
+    end
+  
     def curriculum_is_active_in_system
         all_active_curriculums = Curriculum.active.all.map{|e| e.id}
         unless all_active_curriculums.include?(self.curriculum_id)
