@@ -1,3 +1,4 @@
+module Contexts
 module InstructorContexts
 
   def create_instructors
@@ -15,4 +16,5 @@ module InstructorContexts
     @aisha.destroy
     @amna.destroy
   end
+end
 end

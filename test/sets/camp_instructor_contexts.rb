@@ -1,3 +1,4 @@
+module Contexts
 module CampInstructorContexts
 
   def create_camp_instructors
@@ -20,4 +21,5 @@ module CampInstructorContexts
     @ci7.destroy
   end
   
+end
 end

@@ -77,6 +77,26 @@
         null,
         null
       ],
+      "/home/ubuntu/workspace/phase2/app/models/curriculum.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/home/ubuntu/workspace/phase2/app/models/instructor.rb": [
         0,
         null,
@@ -97,26 +117,6 @@
         0,
         0,
         null,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/curriculum.rb": [
-        0,
-        null,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        0,
         0,
         0,
         0,
@@ -581,6 +581,6 @@
         0
       ]
     },
-    "timestamp": 1523178567
+    "timestamp": 1523179815
   }
 }

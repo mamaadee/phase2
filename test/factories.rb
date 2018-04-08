@@ -2,7 +2,10 @@ FactoryBot.define do
   
   # factory blueprint for curriculums
   factory :curriculum do
-    name "A"
+    name "Calculus"
+    description "learn calculus"
+    min_rating 250
+    max_rating 800
     active true
   end
 

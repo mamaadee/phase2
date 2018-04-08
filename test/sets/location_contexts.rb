@@ -1,3 +1,4 @@
+module Contexts
 module LocationContexts
 
   def create_locations
@@ -15,4 +16,5 @@ module LocationContexts
     @paris.destroy
     @madrid.destroy
   end
+end
 end

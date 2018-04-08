@@ -31,17 +31,17 @@ class CampTest < ActiveSupport::TestCase
     end
 
     should "Have a scope to select only active Camps" do
-      assert_equal 5, Camp.active.size
-      assert_equal ["C1","C3", "C4","C5", "C6"], Camp.active.all.map{|c| c.curriculum.name}.sort
+      assert_equal 2, Camp.active.size
+      assert_equal ["Calculus", "Ruby"], Camp.active.all.map{|c| c.curriculum.name}.sort
     end
     
     should "Have a scope to select only inactive Camps" do
       assert_equal 1, Camp.active.size
-      assert_equal ["C2"], Camp.inactive.all.map{|c| c.curriculum.name}.sort
+      assert_equal ["Java"], Camp.inactive.all.map{|c| c.curriculum.name}.sort
     end
       
     should "have a scope to order alphabetically by camp name" do
-      assert_equal ["C1","C2","C3", "C4","C5", "C6","C7"], Camp.alphabetical.all.map{|c| c.curriculum.name}
+      assert_equal ["Calculus", "Java", "Ruby"], Camp.alphabetical.all.map{|c| c.curriculum.name}
     end
 
     should "have a scope to order chronologically by due_on date" do
