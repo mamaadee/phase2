@@ -17,7 +17,7 @@ class Instructor < ApplicationRecord
 
     #methods
     def self.for_camp(camp)
-        CampInstructor.where(camp_id: camp.id).map{ |ci| ci.instructor }
+        CampInstructor.where(camp_id: camp.id).map{|ci| ci.instructor}
     end
   
     def name

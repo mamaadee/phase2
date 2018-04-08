@@ -40,8 +40,8 @@ FactoryBot.define do
   factory :instructor do
     first_name "Maryam"
     last_name "AlMaadeed"
-    email "mamaadee@qatar.cmu.edu"
-    phone "66001161"
+    phone {rand(10 ** 10).to_s.rjust(10,'0')}
+    email {|i|"#{i.first_name[0]}#{i.last_name}#{(1..99).to_a.sample}@example.com".downcase}
     active true
   end
 end

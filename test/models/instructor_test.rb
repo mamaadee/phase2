@@ -12,7 +12,7 @@ class InstructorTest < ActiveSupport::TestCase
   should validate_presence_of(:email)
   should allow_value("mamaadee@qatar.edu").for(:email)
   #should_not allow_value("mamaadee@qatar,com").for(:email)
-  should allow_value("66001161").for(:phone)
+  should allow_value("6600116121").for(:phone)
   #should_not allow_value("MA-R-YAM").for(:phone)
   
   context "Creating a instructors context" do
