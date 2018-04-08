@@ -25,22 +25,6 @@
         1,
         null
       ],
-      "/home/ubuntu/workspace/phase2/app/models/camp_instructor.rb": [
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        0,
-        null
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
       "/home/ubuntu/workspace/phase2/app/models/camp.rb": [
         1,
         null,
@@ -120,6 +104,59 @@
         null,
         null
       ],
+      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/camp_instructor.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/instructor.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/home/ubuntu/workspace/phase2/app/models/curriculum.rb": [
         1,
         null,
@@ -162,44 +199,6 @@
         1,
         11,
         1,
-        null
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/instructor.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
         null
       ],
       "/home/ubuntu/workspace/phase2/app/jobs/application_job.rb": [
@@ -610,6 +609,6 @@
         0
       ]
     },
-    "timestamp": 1523223672
+    "timestamp": 1523224342
   }
 }

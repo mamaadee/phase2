@@ -41,7 +41,7 @@ FactoryBot.define do
     first_name "Maryam"
     last_name "AlMaadeed"
     email "mamaadee@qatar.cmu.edu"
-    phone 66001161
+    phone "66001161"
     active true
   end
 end
