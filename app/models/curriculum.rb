@@ -1,6 +1,8 @@
 class Curriculum < ApplicationRecord
+    #relationship
     has_many :camps
     
+    #validations
     validates_uniqueness_of :name
     
     #scopes
