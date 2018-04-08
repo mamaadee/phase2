@@ -10,11 +10,11 @@ module InstructorContexts
   end
   
   def destroy_instructors
-    @maryam.destroy
-    @dana.destroy
-    @maha.destroy
-    @aisha.destroy
-    @amna.destroy
+    @maryam.delete
+    @dana.delete
+    @maha.delete
+    @aisha.delete
+    @amna.delete
   end
 end
 end

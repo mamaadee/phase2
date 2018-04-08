@@ -16,12 +16,10 @@ module Contexts
     create_curriculums
     create_instructors
     create_active_locations
-    create_more_instructors
     create_camp_instructors
     create_more_curriculums
     create_past_camps
     create_upcoming_camps
-    create_more_camp_instructors
   end
 
   

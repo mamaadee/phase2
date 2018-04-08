@@ -1,12 +1,12 @@
 module Contexts
 module CampContexts
 def create_camps
-    @ca1 = FactoryBot.create(:camp, name: "C1", curriculum: @a, location: @doha)
-    @ca2 = FactoryBot.create(:camp, name: "C2",curriculum: @c, location: @paris, time_slot: "am", start_date: Date.new(2018,6,12),end_date: Date.new(2018,7,12))
-    @ca3 = FactoryBot.create(:camp, name: "C3",curriculum: @a, location: @madrid, start_date: Date.new(2018,5,23),end_date: Date.new(2018,6,23))
-    @ca4 = FactoryBot.create(:camp, name: "C4",curriculum: @c, location: @doha, time_slot: "pm", start_date: Date.new(2018,8,15),end_date: Date.new(2018,8,22))
-    @ca5 = FactoryBot.create(:camp, name: "C5",curriculum: @a, location: @dubai, start_date: Date.new(2018,5,12),end_date: Date.new(2018,5,25))
-    @ca6 = FactoryBot.create(:camp, name: "C6",curriculum: @a, location: @doha, start_date: Date.new(2018,9,31),end_date: Date.new(2018,10,21))
+    @ca1 = FactoryBot.create(:camp, name: "C1", curriculum: @java, location: @doha)
+    @ca2 = FactoryBot.create(:camp, name: "C2",curriculum: @calc, location: @paris, time_slot: "am", start_date: Date.new(2018,6,12),end_date: Date.new(2018,7,12))
+    @ca3 = FactoryBot.create(:camp, name: "C3",curriculum: @python, location: @madrid, start_date: Date.new(2018,5,23),end_date: Date.new(2018,6,23))
+    @ca4 = FactoryBot.create(:camp, name: "C4",curriculum: @java, location: @doha, time_slot: "pm", start_date: Date.new(2018,8,15),end_date: Date.new(2018,8,22))
+    @ca5 = FactoryBot.create(:camp, name: "C5",curriculum: @java, location: @dubai, start_date: Date.new(2018,5,12),end_date: Date.new(2018,5,25))
+    @ca6 = FactoryBot.create(:camp, name: "C6",curriculum: @java, location: @doha, start_date: Date.new(2018,9,31),end_date: Date.new(2018,10,21))
   end
   
   def destroy_camps
