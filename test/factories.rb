@@ -14,6 +14,10 @@ FactoryBot.define do
 
   # factory blueprint for camps
   factory :camp do
+    start_date Date.new(2018,5,16)
+    end_date Date.new(2018,6,16)
+    time_slot "am"
+    active true
     association :curriculum
     association :location
   end

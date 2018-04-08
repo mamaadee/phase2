@@ -15,3 +15,4 @@ module LocationContexts
     @paris.destroy
     @madrid.destroy
   end
+end
