@@ -6,7 +6,7 @@ class CurriculumTest < ActiveSupport::TestCase
     should allow_value("C1").for(:name)
     should allow_value(10).for(:min_rating)
     should allow_value(10).for(:max_rating)
-    should_not allow_value(-1).for(:min_rating)
+    should_not allow_value(0).for(:min_rating)
     should_not allow_value(3001).for(:max_rating)
     should_not allow_value("bad").for(:min_rating)
     should_not allow_value("bad").for(:max_rating)

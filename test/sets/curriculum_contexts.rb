@@ -1,8 +1,8 @@
 module Contexts
   module CurriculumContexts
     def create_curriculums
-      @calc    = FactoryBot.create(:curriculum)
-      @java   = FactoryBot.create(:curriculum, name: "Java", min_rating: 450, max_rating: 800)
+      @calc = FactoryBot.create(:curriculum)
+      @java = FactoryBot.create(:curriculum, name: "Java", min_rating: 450, max_rating: 800)
       @ruby = FactoryBot.create(:curriculum, name: "Ruby", active: false)
     end
 
